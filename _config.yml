@@ -7,13 +7,13 @@ gems:
 permalink:           pretty
 
 # Setup
-url:                 http://qwtel.com
+url:                 https://www.knightboy.cn
 
 # Set to '' in case of hosting on GitHub pages,
 # i.e. `http://<username>.github.io`
-baseurl:             /hydejack
+baseurl:             /boy
 
-title:               Hydejack
+title:               Stolen
 
 # Pagination
 paginate:            5
