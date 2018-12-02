@@ -12,7 +12,7 @@ url:                   https://www.knightboy.cn
 # Use the empty string '' otherwise.
 # For GitHub project sites, this is usually the name of the project,
 # e.g. `/hydejack`.
-baseurl:               '/boy'
+baseurl:               /boy
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
@@ -41,7 +41,7 @@ logo:                  /assets/icons/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
-  name:                Pan Gu
+  name:                Pang Gu
   email:               hpanw@foxmail.com
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
@@ -286,7 +286,7 @@ plugins:
 
 # Used on index and about sites
  social:
-   name:                Pan Gu
+   name:                Pang Gu
    links:
      - https://weibo.com/hpanw
      - https://github.com/knight-boy
