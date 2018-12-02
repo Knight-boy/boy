@@ -41,8 +41,8 @@ logo:                  /assets/icons/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
-  name:                <firstname> <lastname>
-  email:               <hpanw@foxmail.com>
+  name:                Pan Gu
+  email:               hpanw@foxmail.com
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -286,7 +286,7 @@ plugins:
 
 # Used on index and about sites
  social:
-   name:                <King> <knight>
+   name:                Pan Gu
    links:
      - https://weibo.com/hpanw
      - https://github.com/knight-boy
