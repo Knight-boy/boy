@@ -2,8 +2,8 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <Pang> <Gu>
-  email:             <hpanw@foxmail.com>
+  name:              Pang Gu
+  email:             hpanw@foxmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -34,10 +34,10 @@ author1:
   # Rearrange to change the order in which they appear
   social:
     # twitter:         <username>
-    github:            <knight-boy>
-    email:             <hpanw@foxmail.com>
+    github:            knight-boy
+    email:             hpanw@foxmail.com
     # rss:             https://<url>/feed.xml
-    facebook:          <boy knight>
+    facebook:          boy knight
     # google:          <number>
     # vk:              <username>
     # youtube:         <string_string_string>
