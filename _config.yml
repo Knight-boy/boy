@@ -285,11 +285,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
- social:
-   name:                Pang Gu
-   links:
-     - https://weibo.com/hpanw
-     - https://github.com/knight-boy
+# social:
+#   name:                Pang Gu
+#   links:
+#     - https://weibo.com/hpanw
+#     - https://github.com/knight-boy
 
 
 # Other Plugins
