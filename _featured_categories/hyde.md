@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Hyde
-slug: hyde
+title: Origin
+slug: origin
 menu: true
 order: 2
 description: >
