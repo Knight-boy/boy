@@ -36,22 +36,20 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 
 ### Blockquotes
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
-
 ## List Types
-
 ### Ordered Lists
 1. Item one
    1. sub item one
    2. sub item two
    3. sub item three
 2. Item two
-
 ### Unordered Lists
 * Item one
 * Item two
 * Item three
 
 ## Tables
+
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
@@ -86,7 +84,6 @@ Make any link standout more when applying the `.btn` class.
 <div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
 
 ## KBD
-
 You can also use `<kbd>` tag for keyboard buttons.
 
 {% highlight html %}
@@ -96,6 +93,5 @@ You can also use `<kbd>` tag for keyboard buttons.
 Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midtown Maddness!!**
 
 ## Notices
-
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .message}
