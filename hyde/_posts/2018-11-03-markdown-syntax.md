@@ -1,6 +1,9 @@
 ---
 layout: post
 title:  "Markdown Syntax"
+image: /assets/img/blog/hydejack-8.png
+description: >
+  Hydejack 8 is the best version of Hydejack yet.
 author: author1
 ---
 
@@ -27,18 +30,16 @@ Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nulla
 ![Smithsonian Image](https://raw.githubusercontent.com/Knight-boy/QQone/gh-pages/public/images/3D.gif)
 {: .image-right}
 
-*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 5^3^ = 125. Water is H~2~O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 
 HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
 
 ### Blockquotes
-
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
 
 ## List Types
 
 ### Ordered Lists
-
 1. Item one
    1. sub item one
    2. sub item two
@@ -46,13 +47,11 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 2. Item two
 
 ### Unordered Lists
-
 * Item one
 * Item two
 * Item three
 
 ## Tables
-
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
@@ -65,7 +64,6 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 {: rules="groups"}
 
 ## Code Snippets
-
 {% highlight css %}
 #container {
   float: left;
@@ -75,7 +73,6 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 {% endhighlight %}
 
 ## Buttons
-
 Make any link standout more when applying the `.btn` class.
 
 {% highlight html %}
@@ -101,4 +98,4 @@ Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midto
 ## Notices
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
-{: .notice}
+{: .message}
