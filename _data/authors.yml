@@ -75,15 +75,15 @@ author1:
 
 # Another author (optional)
 author2:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Pang Gu
+  email:             hpanw@foxmail.com
   about:             |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
     Open `_data/authors.yml` to edit this text.
-  picture:           https://placehold.it/128x128
+  picture:           https://raw.githubusercontent.com/Knight-boy/QQone/gh-pages/public/images/Owner.jpg
   twitter:           <username>
   github:            <username>
   accent_color:      '#268bd2'
