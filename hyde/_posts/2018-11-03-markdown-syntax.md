@@ -6,10 +6,9 @@ description: >
   Hydejack 8 is the best version of Hydejack yet.
 author: author1
 ---
+Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
 ## HTML Elements
-
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
 # Heading 1
 
@@ -41,7 +40,6 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 ## List Types
 
 ### Ordered Lists
-
 1. Item one
    1. sub item one
    2. sub item two
@@ -49,7 +47,6 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 2. Item two
 
 ### Unordered Lists
-
 * Item one
 * Item two
 * Item three
@@ -68,22 +65,20 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 {: rules="groups"}
 
 ## Code Snippets
-
-{% highlight css %}
+``` css
 #container {
   float: left;
   margin: 0 -240px 0 0;
   width: 100%;
 }
-{% endhighlight %}
+```
 
 ## Buttons
-
 Make any link standout more when applying the `.btn` class.
 
-{% highlight html %}
+``` html
 <a href="#" class="btn btn-success">Success Button</a>
-{% endhighlight %}
+```
 
 <div markdown="0"><a href="#" class="btn">Primary Button</a></div>
 <div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div>
@@ -94,12 +89,12 @@ Make any link standout more when applying the `.btn` class.
 ## KBD
 You can also use `<kbd>` tag for keyboard buttons.
 
-{% highlight html %}
+``` html
 <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>
-{% endhighlight %}
+```
 
 Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midtown Maddness!!**
 
 ## Notices
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+**Watch out!** You can also add notices by appending `{: .message}` to a paragraph.
 {: .message}
