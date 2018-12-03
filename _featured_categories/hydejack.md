@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Hydejack
-slug: hydejack
+title: Master
+slug: master
 menu: true
 order: 1
 description: >
