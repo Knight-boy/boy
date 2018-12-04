@@ -5,6 +5,7 @@ image: /assets/img/blog/hydejack-8.png
 description: >
   Hydejack 8 is the best version of Hydejack yet.
 author: author2
+comments: true
 ---
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
