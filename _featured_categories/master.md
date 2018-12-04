@@ -2,7 +2,6 @@
 layout: list
 title: Master
 slug: master
-menu: true
 order: 1
 description: >
   Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by
