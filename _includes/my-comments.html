@@ -18,7 +18,7 @@
   var guest = '{{site.valine.guest_info}}';
   guest = guest.split(',').filter(function(item){
     return GUEST.indexOf(item)>-1;
-  })
+  });
   new Valine({
     el: '#disqus_thread',
     verify: {{ site.valine.verify }},
