@@ -13,8 +13,6 @@
       w.loadJSDeferred(d.getElementById("_hrefvaline").href + 'valine/dist/Valine.min.js');
     }
   }(window, document);
-</script>
-<script>
   var appkey = '{{ site.valine.appkey }}',
     appid = '{{ site.valine.appid }}';
   new Valine({
@@ -25,6 +23,6 @@
     verify: false,
     avatar: 'mm',
     placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
-  });
+  })
 </script>
 {% endif %}
