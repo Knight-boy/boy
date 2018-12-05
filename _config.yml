@@ -126,17 +126,14 @@ google_analytics:      UA-130421911-1
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-disqus:                
-  enable: false
-  appid: 3o1jzA0gJVUlcoKEpLtLK3uE-gzGzoHsz
-  appkey: zPeaCmqF1O3KlX8k5gcMSDBw
+#disqus: 
 
 # valine
-#valine:
-#    enable: true
-#    appid: 
- #   appkey: 
- #   notify: false
+valine:
+  enable: true
+  appid: 3o1jzA0gJVUlcoKEpLtLK3uE-gzGzoHsz
+  appkey: zPeaCmqF1O3KlX8k5gcMSDBw 
+#    notify: false
 #    verify: false
 #    avatar: 'mm'
 #    placeholder: 'just go now!'
