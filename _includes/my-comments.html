@@ -10,9 +10,18 @@
         this.page.title = d.title;
       };
       w.loadJSDeferred(d.getElementById("_hrefav").href + '/static/js/3.0.4/av-min.js');
-      w.loadJSDeferred(d.getElementById("_hrefvaline").href + 'valine/dist/Valine.min.js');
     }
   }(window, document);
+
+  (function(d, s) {
+    var j, e = d.getElementsByTagName('footer')[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://unpkg.com/valine/dist/Valine.min.js';
+    j.async = true;
+    e.insertBefore(j, e);
+  })(document, 'script');
+
   var appkey = '{{ site.valine.appkey }}',
     appid = '{{ site.valine.appid }}';
   new Valine({
