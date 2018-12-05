@@ -14,12 +14,12 @@
   }(window, document);
 
   (function(d, s) {
-    var j, e = d.getElementsByTagName('footer')[0];
+    var j, e = d.getElementsByTagName('main')[0];
     if (typeof LivereTower === 'function') { return; }
     j = d.createElement(s);
     j.src = 'https://unpkg.com/valine/dist/Valine.min.js';
     j.async = true;
-    e.insertBefore(j, e);
+    e.appendChild(j);
   })(document, 'script');
 
   var appkey = '{{ site.valine.appkey }}',
