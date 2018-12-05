@@ -133,11 +133,14 @@ valine:
   enable: true
   appid: 3o1jzA0gJVUlcoKEpLtLK3uE-gzGzoHsz
   appkey: zPeaCmqF1O3KlX8k5gcMSDBw 
-#    notify: false
-#    verify: false
-#    avatar: 'mm'
-#    placeholder: 'just go now!'
-
+  notify: false
+  verify: false
+  avatar: 'mm'
+  placeholder: 'just go now!'
+  guest_info: nick,mail,link
+  pageSize: 10
+  visitor: true
+  
 # Setting a tinyletter username will enable the newsletter subscription box.
 # tinyletter:            <tinyletter_username>
 

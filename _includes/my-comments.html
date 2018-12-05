@@ -14,16 +14,22 @@
     }
   }(window, document);
 
-  var appkey = '{{ site.valine.appkey }}',
-    appid = '{{ site.valine.appid }}';
-  new Valine({
-    av: AV,
-    el: '#disqus_thread',
-    appId: appid,
-    appKey: appkey,
-    verify: false,
-    avatar: 'mm',
-    placeholder: 'Just go now!'
+  var GUEST = ['nick','mail','link'];
+  var guest = '{{site.valine.guest_info}}';
+  guest = guest.split(',').filter(function(item){
+    return GUEST.indexOf(item)>-1;
   })
+  new Valine({
+    el: '#disqus_thread',
+    verify: {{ site.valine.verify }},
+    notify: {{ site.valine.notify }},
+    appId: '{{ site.valine.appid }}',
+    appKey: '{{ site.valine.appkey }}',
+    placeholder: '{{site.valine.placeholder}}',
+    avatar: '{{site.valine.avatar}}',
+    meta: guest,
+    pageSize: '{{site.valine.pageSize}}' || 10,
+    visitor: {{site.valine.visitor}}
+  });
 </script>
 {% endif %}
