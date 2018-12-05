@@ -1,24 +1,33 @@
 {% assign disqus = site.disqus | default:site.disqus_shortname %}
-{% if disqus %}
+{% if disqus.enable and disqus.appkey and disqus.appid %}
 <div id="disqus_thread"></div>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-<script>!function(w, d) {
-  if (d.getElementById("disqus_thread")) {
-    if (w.DISQUS) {
-      w.DISQUS.reset({
-        reload: true,
-        config() {
-          this.page.url = w.location.href;
-          this.page.title = d.title;
-        },
-      });
-    } else {
-      w.disqus_config = function disqusConfig() {
-        this.page.url = w.location.href;
-        this.page.title = d.title;
-      };
-      w.loadJSDeferred(d.getElementById("_hrefDisqus").href + '/embed.js');
-    }
-  }
-}(window, document);</script>
+<script>
+  var appkey = '{{ disqus.appkey }}',
+    appid = '{{ disqus.appid }}'；
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn1.lncld.net/static/js/3.0.4/av-min.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://unpkg.com/valine/dist/Valine.min.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+
+  new Valine({
+    av: AV, 
+    el: '#disqus_thread', // 
+    app_id: appid, // 这里填写上面得到的APP ID
+    app_key: appkey, // 这里填写上面得到的APP KEY
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+  });
+</script>
 {% endif %}
