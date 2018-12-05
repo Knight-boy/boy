@@ -14,17 +14,10 @@
       };
       var src1 = 'https://cdn1.lncld.net/static/js/3.0.4/av-min.js',
         src2 = 'https://unpkg.com/valine/dist/Valine.min.js';
-      w.loadJSDeferred(src1);
-      w.loadJSDeferred(src2);
+      w.loadJSDeferred(d.getElementById("_hrefav").href + '/static/js/3.0.4/av-min.js');
+      w.loadJSDeferred(d.getElementById("_hrefvaline").href + '/valine/dist/Valine.min.js');
     }
   }(window, document);
-
-  // !function(d, v) {
-  //   var i, ele = d.getElementById('disqus_thread');
-  //   i = d.createElement(v);
-  //   i.setAttribute('id','comments');
-  //   ele.appendChild(i);
-  // }(document, 'div');
 
   new Valine({
     av: AV,
@@ -36,28 +29,4 @@
     placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
   });
 </script>
-<!-- {% elseif disqus %}
-<div id="disqus_thread"></div>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-<script>
-!function(w, d) {
-  if (d.getElementById("disqus_thread")) {
-    if (w.DISQUS) {
-      w.DISQUS.reset({
-        reload: true,
-        config() {
-          this.page.url = w.location.href;
-          this.page.title = d.title;
-        },
-      });
-    } else {
-      w.disqus_config = function disqusConfig() {
-        this.page.url = w.location.href;
-        this.page.title = d.title;
-      };
-      w.loadJSDeferred(d.getElementById("_hrefDisqus").href + '/embed.js');
-    }
-  }
-}(window, document);
-</script> -->
 {% endif %}
