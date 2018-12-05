@@ -3,9 +3,6 @@
 {% if site.valine.enable %}
 <div id="disqus_thread"></div>
 <script>
-  var appkey = '{{ site.valine.appkey }}',
-    appid = '{{ site.valine.appid }}';
-
   !function(w, d){
     if(d.getElementById("disqus_thread")){
       w.disqus_config = function disqusConfig() {
@@ -18,6 +15,8 @@
   }(window, document);
 </script>
 <script>
+  var appkey = '{{ site.valine.appkey }}',
+    appid = '{{ site.valine.appid }}';
   new Valine({
     av: AV,
     el: '#disqus_thread',
