@@ -1,19 +1,8 @@
-<!-- {% assign disqus = site.disqus | default:site.disqus_shortname %} -->
-
 {% if site.valine.enable %}
 <div id="disqus_thread"></div>
-<script>
-  !function(w, d){
-    if(d.getElementById("disqus_thread")){
-      w.disqus_config = function disqusConfig() {
-        this.page.url = w.location.href;
-        this.page.title = d.title;
-      };
-      w.loadJSDeferred(d.getElementById("_hrefav").href + '/static/js/3.0.4/av-min.js');
-      w.loadJSDeferred(d.getElementById("_hrefvaline").href + 'valine/dist/Valine.min.js');
-    }
-  }(window, document);
-
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script type="text/javascript">
   var GUEST = ['nick','mail','link'];
   var guest = '{{site.valine.guest_info}}';
   guest = guest.split(',').filter(function(item){
