@@ -1,42 +1,42 @@
-{% assign disqus = site.disqus | default:site.disqus_shortname %}
+<!-- {% assign disqus = site.disqus | default:site.disqus_shortname %} -->
 
 {% if site.valine.enable %}
 <div id="disqus_thread"></div>
 <script>
   var appkey = '{{ site.valine.appkey }}',
     appid = '{{ site.valine.appid }}'；
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    j = d.createElement(s);
-    j.src = 'https://cdn1.lncld.net/static/js/3.0.4/av-min.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
 
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    j = d.createElement(s);
-    j.src = 'https://unpkg.com/valine/dist/Valine.min.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
-  (function(d, v) {
-    var i, ele = d.getElementById('disqus_thread');
-    i = d.createElement(v);
-    i.setAttribute('id','comments');
-    ele.appendChild(i);
-  })(document, 'div');
+  !function(w, d){
+    if(d.getElementById("disqus_thread")){
+      w.disqus_config = function disqusConfig() {
+        this.page.url = w.location.href;
+        this.page.title = d.title;
+      };
+      var src1 = 'https://cdn1.lncld.net/static/js/3.0.4/av-min.js',
+        src2 = 'https://unpkg.com/valine/dist/Valine.min.js';
+      w.loadJSDeferred(src1);
+      w.loadJSDeferred(src2);
+    }
+  }(window, document);
+
+  // !function(d, v) {
+  //   var i, ele = d.getElementById('disqus_thread');
+  //   i = d.createElement(v);
+  //   i.setAttribute('id','comments');
+  //   ele.appendChild(i);
+  // }(document, 'div');
+
   new Valine({
     av: AV,
-    el: '#comments', // 
+    el: '#disqus_thread', // 
     app_id: appid, // 这里填写上面得到的APP ID
     app_key: appkey, // 这里填写上面得到的APP KEY
-    verify:false, 
-    avatar:'mm', 
+    verify: false, 
+    avatar: 'mm', 
     placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
   });
 </script>
-{% elseif disqus %}
+<!-- {% elseif disqus %}
 <div id="disqus_thread"></div>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 <script>
@@ -59,5 +59,5 @@
     }
   }
 }(window, document);
-</script>
+</script> -->
 {% endif %}
