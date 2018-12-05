@@ -1,7 +1,7 @@
 {% assign disqus = site.disqus | default:site.disqus_shortname %}
 
-{% if site.valine.enable and site.valine.appkey and site.valine.appid %}
-<div id="comments"></div>
+{% if site.valine.enable %}
+<div id="disqus_thread"></div>
 <script>
   var appkey = '{{ site.valine.appkey }}',
     appid = '{{ site.valine.appid }}'；
@@ -20,7 +20,12 @@
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
-
+  (function(d, v) {
+    var i, ele = d.getElementById('disqus_thread');
+    i = d.createElement(v);
+    i.setAttribute('id','comments');
+    ele.appendChild(i);
+  })(document, 'div');
   new Valine({
     av: AV,
     el: '#comments', // 
